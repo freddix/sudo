@@ -1,12 +1,12 @@
 Summary:	Allows command execution as root for specified users
 Name:		sudo
-Version:	1.8.6p8
+Version:	1.8.7
 Release:	1
 Epoch:		1
 License:	BSD
 Group:		Applications/System
 Source0:	ftp://ftp.sudo.ws/pub/sudo/%{name}-%{version}.tar.gz
-# Source0-md5:	6dac48c73c8e0932980efcddafa569af
+# Source0-md5:	a02367090e1dac8d0c1747de1127b6bf
 Source1:	%{name}.pamd
 Source2:	%{name}.logrotate
 Patch0:		%{name}-ac.patch
@@ -35,9 +35,7 @@ defined at installation time and defaults to 5 minutes).
 %setup -q
 
 # only local macros
-mv -f aclocal.m4 acinclude.m4
-# kill libtool.m4 copy
-rm -f acsite.m4
+%{__mv} aclocal.m4 acinclude.m4
 
 %build
 %configure \
