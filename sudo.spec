@@ -1,7 +1,7 @@
 Summary:	Allows command execution as root for specified users
 Name:		sudo
 Version:	1.8.7
-Release:	1
+Release:	2
 Epoch:		1
 License:	BSD
 Group:		Applications/System
