@@ -1,12 +1,12 @@
 Summary:	Allows command execution as root for specified users
 Name:		sudo
-Version:	1.8.7
-Release:	2
+Version:	1.8.8
+Release:	1
 Epoch:		1
 License:	BSD
 Group:		Applications/System
 Source0:	ftp://ftp.sudo.ws/pub/sudo/%{name}-%{version}.tar.gz
-# Source0-md5:	a02367090e1dac8d0c1747de1127b6bf
+# Source0-md5:	fc4f074090afd56d9ff4ff4e97321971
 Source1:	%{name}.pamd
 Source2:	%{name}.logrotate
 Patch0:		%{name}-ac.patch
