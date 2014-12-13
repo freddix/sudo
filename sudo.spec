@@ -1,13 +1,13 @@
 # based on PLD Linux spec git://git.pld-linux.org/packages/sudo.git
 Summary:	Allows command execution as root for specified users
 Name:		sudo
-Version:	1.8.11p1
+Version:	1.8.11p2
 Release:	1
 Epoch:		1
 License:	BSD
 Group:		Applications/System
 Source0:	ftp://ftp.sudo.ws/pub/sudo/%{name}-%{version}.tar.gz
-# Source0-md5:	5065deec62e8cd514fb04d1d1253db03
+# Source0-md5:	84012b4871b6c775c957cd310d5bad87
 Source1:	%{name}.pamd
 Source2:	%{name}.logrotate
 Source3:	%{name}.tmpfiles.conf
