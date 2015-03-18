@@ -1,13 +1,13 @@
 # based on PLD Linux spec git://git.pld-linux.org/packages/sudo.git
 Summary:	Allows command execution as root for specified users
 Name:		sudo
-Version:	1.8.11p2
+Version:	1.8.12
 Release:	1
 Epoch:		1
 License:	BSD
 Group:		Applications/System
 Source0:	ftp://ftp.sudo.ws/pub/sudo/%{name}-%{version}.tar.gz
-# Source0-md5:	84012b4871b6c775c957cd310d5bad87
+# Source0-md5:	87558f3a55c62bc9244b19594f103ffa
 Source1:	%{name}.pamd
 Source2:	%{name}.logrotate
 Source3:	%{name}.tmpfiles.conf
@@ -83,7 +83,7 @@ systemd-tmpfiles --create sudo.conf >/dev/null 2>&1 ||:
 
 %files -f %{name}.lang
 %defattr(644,root,root,755)
-%doc doc/{HISTORY,TROUBLESHOOTING,sample.*} README
+%doc doc/{HISTORY,TROUBLESHOOTING} README
 %attr(550,root,root) %dir %{_sysconfdir}/sudoers.d
 %attr(440,root,root) %verify(not md5 mtime size) %config(noreplace) %{_sysconfdir}/sudoers
 %attr(600,root,root) %config(noreplace) %verify(not md5 mtime size) /etc/pam.d/sudo
